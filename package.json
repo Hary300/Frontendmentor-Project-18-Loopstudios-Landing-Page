@@ -4,19 +4,20 @@
   "description": "This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw).",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx watch index.ts",
-    "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
     "@types/node": "^22.20.3",
     "tsx": "^4.23.13",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
