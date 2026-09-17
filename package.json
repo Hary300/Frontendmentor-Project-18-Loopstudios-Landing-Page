@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch index.ts",
+    "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
     "build": "tsc",
     "start": "node dist/index.js"
   },
@@ -16,5 +17,9 @@
     "@types/node": "^22.20.3",
     "tsx": "^4.23.13",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
   }
 }
